@@ -138,6 +138,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# MEDIA_URL
+MEDIA_URL = '/ec-media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'ec_media')
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
