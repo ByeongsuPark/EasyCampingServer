@@ -16,6 +16,7 @@ class Product(models.Model):
     rentAvailableStartDate = models.DateField(default=timezone.now())
     rentAvailableEndDate = models.DateField(default=timezone.now())
     directAvailable = models.BooleanField(default=False)
+    isEscrow = models.BooleanField(default=False)
     lat = models.DecimalField(max_digits=9, decimal_places=6)
     lng = models.DecimalField(max_digits=9, decimal_places=6)
     category = models.CharField(max_length=50)
